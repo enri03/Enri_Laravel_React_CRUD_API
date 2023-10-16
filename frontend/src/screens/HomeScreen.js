@@ -14,6 +14,7 @@ const HomeScreen = ({ history }) => {
   return (
     <div>
       <Header />
+      <h1>This is Home Screen</h1>
     </div>
   );
 };

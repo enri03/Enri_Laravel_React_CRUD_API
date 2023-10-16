@@ -17,7 +17,7 @@ const RegisterScreen = ({ history }) => {
   const dispatch = useDispatch();
 
   const userRegister = useSelector((state) => state.userRegister);
-  const { success } = userRegister;
+  const { success,error:DBerror } = userRegister;
   useEffect(() => {
     if (success) {
       history.push("/");
@@ -71,6 +71,7 @@ const RegisterScreen = ({ history }) => {
     <FormContainer>
       <h1>User Register Form</h1>
       {error && <Message variant="danger">{error}</Message>}
+      {DBerror&& <Message variant="danger">{DBerror}</Message>}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId="name">
           <Form.Label>Fisrt Name</Form.Label>
