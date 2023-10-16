@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  padding: 10px; /* Add some padding for spacing */
+  background-color: #f8f9fa; /* Background color for the header */
+  border: 1px solid #dee2e6; /* Border for the header */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.nav-link {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px; /* Adjust spacing between links */
+  border: 1px solid transparent;
+  border-radius: 4px; /* Rounded corners for links */
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.user-info button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-info button:hover {
+  background-color: #c82333;
+}
+
+/* Add some margin to the user info section to separate it from the tabs */
+.user-info {
+  margin-right: 20px;
+}
+
+/* Adjust the size and spacing of the header span */
+.header span {
+  font-size: 24px; /* Adjust the font size as needed */
+  padding-left: 20px;
+  padding-right: 20px; /* Increase padding to separate it from user info */
+  text-transform: capitalize;
+}
+
+/* Center the header span vertically */
+.header span {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust the size of the logout button */
+.user-info button {
+  padding: 5px 8px; /* Slightly reduce padding */
+}
+
+/* Add a hover effect for the logout button */
+.user-info button:hover {
+  background-color: #c82333;
+}
