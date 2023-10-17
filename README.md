@@ -54,3 +54,5 @@
      ```
 
    - The app should now be up and running at [http://localhost:3000/](http://localhost:3000/). By default, a user login form will be displayed. You  need to create a user first using register form
+   Note: As for this project the SPA is on production and accesable through this link for demo purpose ( https://laravelreactapi.netlify.app/ ) but since there is no server or DB on prod this app will not work 
+   unless the Laravel service and MYSQL db are set up on the local env
