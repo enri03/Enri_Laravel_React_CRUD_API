@@ -49,7 +49,7 @@ const EditUserScreen = ({ match, history }) => {
   //Validate Name
   const handleNameChange = (e) => {
     const newValue = e.target.value;
-    if (/^[A-Za-z]*$/.test(newValue)) {
+    if (/^[^0-9]*$/.test(newValue)) {
       // Only set the name state if the input is valid (no numbers)
       setName(newValue);
       setError();
@@ -60,7 +60,7 @@ const EditUserScreen = ({ match, history }) => {
   //Validate Last Name
   const handleLastNameChange = (e) => {
     const newValue = e.target.value;
-    if (/^[A-Za-z]*$/.test(newValue)) {
+    if (/^[^0-9]*$/.test(newValue)) {
       // Only set the last name state if the input is valid (no numbers)
       setLastName(newValue);
       setError();
