@@ -44,12 +44,13 @@ const UsersListScreen = ({ history }) => {
       dispatch(getUsersList());
     } catch (error) {
       setDeleteError(error.response.data.message);
+      setDeleteStatus(false);
     }
   };
   return (
     <div>
       <Header />
-      {deleteError && <Message variant="danger">{deleteError}</Message>}
+      {!deleteStatus && deleteError && <Message variant="danger">{deleteError}</Message>}
       {deleteStatus && <Message variant="warning">{deleteMessage}</Message>}
       <Link to={`users/create/`} className="btn btn-primary">
         Create User
